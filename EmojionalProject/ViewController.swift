@@ -13,15 +13,16 @@ class ViewController: UIViewController {
    
     @IBAction func happyButton(_ sender: Any) {
         let alertController = UIAlertController(title: "Happy", message: "Rock on!", preferredStyle: UIAlertController.Style.alert)
-      alertController.addAction(UIAlertAction(title: "You are happy", style: UIAlertAction.Style.default, handler: nil))
-        
+      alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        present(alertController, animated: true, completion: nil)
 
     }
     
     
     @IBAction func sadButton(_ sender: UIButton) {
-        let alertController = UIAlertController(title: "Happy", message: "Rock on!", preferredStyle: UIAlertController.Style.alert)
-       alertController.addAction(UIAlertAction(title: "You are sad", style: UIAlertAction.Style.default, handler: nil))
+        let alertController = UIAlertController(title: "You are sad", message: "It's okay keep pushing!", preferredStyle: UIAlertController.Style.alert)
+       alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        present(alertController, animated: true, completion: nil)
         
     }
 }
